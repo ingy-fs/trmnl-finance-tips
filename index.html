@@ -734,20 +734,15 @@
 
         // Handle TRMNL polling requests
         // When TRMNL visits this page, it looks for JSON data
-        if (window.location.search.includes('format=json') || 
-            window.location.pathname.includes('.json') ||
-            document.referrer.includes('trmnl')) {
-            
-            const tip = getTodaysTip();
-            const jsonData = {
-                term: tip.term,
-                definition: tip.definition,
-                tip: tip.tip,
-                merge_variables: {
-                    term: tip.term,
-                    definition: tip.definition,
-                    tip: tip.tip
-                }
+   if (window.location.search.includes('format=json')) {
+    const tip = getTodaysTip();
+    document.body.innerHTML = JSON.stringify({
+        term: tip.term,
+        definition: tip.definition,
+        tip: tip.tip
+    });
+    document.body.style.whiteSpace = 'pre';
+}
             };
             
             // Output JSON for TRMNL
