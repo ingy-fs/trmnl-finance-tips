@@ -13,10 +13,20 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Select random tip
+      - name: Select next tip in order
         run: |
-          TIP=$(jq -c '.[]' tips.json | shuf -n 1)
-          echo "$TIP" > api.json
+          TOTAL=$(jq length tips.json)
+
+          if [ ! -f index.txt ]; then
+            echo 0 > index.txt
+          fi
+
+          INDEX=$(cat index.txt)
+          NEXT_INDEX=$((INDEX % TOTAL))
+
+          jq -c ".[$NEXT_INDEX]" tips.json > api.json
+
+          echo $((INDEX + 1)) > index.txt
 
       - name: Commit updated tip
         run: |
