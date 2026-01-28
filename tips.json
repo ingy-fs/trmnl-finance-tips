@@ -1,102 +1,1196 @@
 [
-  { "term": "Tax Loss Harvesting", "definition": "Selling investments at a loss to offset capital gains taxes, then reinvesting in similar (but not identical) assets to maintain market exposure.", "tip": "Harvest losses in taxable accounts annually, but wait 31 days before repurchasing to avoid wash sale rules." },
-  { "term": "Backdoor Roth IRA", "definition": "A strategy where high earners contribute to a traditional IRA (no income limits), then immediately convert to a Roth IRA, bypassing Roth income restrictions.", "tip": "Check for existing traditional IRA balances first—the pro-rata rule can create unexpected tax bills." },
-  { "term": "Expense Ratio", "definition": "The annual fee charged by mutual funds or ETFs, expressed as a percentage of your investment. A 1% ratio means $10 yearly per $1,000 invested.", "tip": "Over 30 years, a 1% expense ratio can cost you 30% of potential returns due to compounding." },
-  { "term": "Sequence of Returns Risk", "definition": "The danger that poor market performance early in retirement can deplete your portfolio faster than later losses, even with identical average returns.", "tip": "Keep 2-3 years of expenses in bonds or cash when retiring to avoid selling stocks during downturns." },
-  { "term": "Mega Backdoor Roth", "definition": "An advanced strategy using after-tax 401(k) contributions (beyond the $23,000 limit) converted to Roth, potentially adding $40,000+ annually.", "tip": "Check if your plan allows after-tax contributions and in-service distributions—not all employers offer this." },
-  { "term": "Capital Gains Harvesting", "definition": "Strategically selling appreciated investments in low-income years to realize gains at 0% tax rate, then immediately repurchasing them with a higher cost basis.", "tip": "If your taxable income is under $47,025 (single) or $94,050 (married), long-term gains are tax-free." },
-  { "term": "Safe Withdrawal Rate", "definition": "The percentage you can withdraw from retirement savings annually with low risk of running out. The classic '4% rule' assumes 30-year retirement periods.", "tip": "Modern research suggests 3.5% is safer for longer retirements or conservative portfolios." },
-  { "term": "Asset Location", "definition": "Placing tax-inefficient investments (bonds, REITs) in tax-advantaged accounts and tax-efficient ones (index funds) in taxable accounts.", "tip": "Put high-yield bonds in IRAs, not taxable accounts—interest is taxed as ordinary income, not capital gains." },
-  { "term": "1% Rule (Real Estate)", "definition": "A quick screening tool where monthly rent should equal at least 1% of purchase price for a property to potentially be a good investment.", "tip": "This is a rough filter, not a decision rule—always run detailed cash flow analysis including all costs." },
-  { "term": "Opportunity Cost", "definition": "The value of the next best alternative you give up when making a financial decision. Every choice has hidden costs.", "tip": "Paying off a 3% mortgage early costs you the 10% you could have earned investing that money instead." },
-  { "term": "I Bonds", "definition": "U.S. savings bonds that adjust interest rates with inflation, offering risk-free returns that preserve purchasing power with tax advantages.", "tip": "Limited to $10,000/year per person, but interest is state tax-free and federally deferred until redemption." },
-  { "term": "Qualified Charitable Distribution", "definition": "Tax-free donations directly from your IRA (age 70½+) to charity, satisfying required minimum distributions without increasing taxable income.", "tip": "This is better than taking the distribution and donating—avoids MAGI increases that affect Medicare premiums." },
-  { "term": "Marginal vs Effective Tax Rate", "definition": "Marginal is the tax on your next dollar earned (your tax bracket), while effective is your average rate across all income.", "tip": "A 24% bracket doesn't mean you pay 24% on everything—your effective rate is much lower." },
-  { "term": "FIRE Movement", "definition": "Financial Independence, Retire Early - a movement focused on extreme saving (50-70% of income) and investing to achieve financial independence decades before traditional retirement.", "tip": "The math is simple: save 50% of income and you can retire in 17 years regardless of salary." },
-  { "term": "Bogleheads Philosophy", "definition": "An investment approach emphasizing low-cost index funds, asset allocation, tax efficiency, and staying the course through market volatility.", "tip": "A simple three-fund portfolio (US stocks, international stocks, bonds) beats most active management." },
-  { "term": "Health Savings Account (HSA)", "definition": "A triple-tax-advantaged account for medical expenses: contributions are tax-deductible, growth is tax-free, and withdrawals for qualified medical expenses are tax-free.", "tip": "Max it out and invest it like a retirement account—after 65, you can withdraw for any purpose penalty-free." },
-  { "term": "Net Investment Income Tax", "definition": "An additional 3.8% tax on investment income for high earners (over $200k single, $250k married), applied to interest, dividends, and capital gains.", "tip": "Consider municipal bonds or tax-deferred growth strategies if you're near these thresholds." },
-  { "term": "Rule of 72", "definition": "A quick formula to estimate how long it takes to double your money: divide 72 by your annual return rate. At 8% return, money doubles in 9 years.", "tip": "Use this to quickly evaluate if investment claims are realistic—12% means doubling every 6 years." },
-  { "term": "Umbrella Insurance", "definition": "Liability coverage beyond your auto and home policies, typically $1-5 million, protecting assets from lawsuits at low cost ($200-500/year).", "tip": "Get it once your net worth exceeds your standard liability limits—it's the cheapest insurance per dollar of coverage." },
-  { "term": "Bond Ladder", "definition": "A strategy of buying bonds with staggered maturity dates, providing regular income while reducing interest rate risk.", "tip": "In rising rate environments, reinvest maturing bonds at higher yields while maintaining steady income." },
-  { "term": "Alternative Minimum Tax (AMT)", "definition": "A parallel tax system that limits certain deductions, ensuring high earners pay a minimum tax regardless of deductions.", "tip": "Exercising ISOs or having high state taxes can trigger AMT—run projections before year-end tax moves." },
-  { "term": "Dollar Duration", "definition": "The dollar amount your bond portfolio will change in value for a 1% interest rate movement, combining duration and portfolio size.", "tip": "A $100k portfolio with 7-year duration loses $7k if rates rise 1%—know your exposure before rate hikes." },
-  { "term": "Roth Conversion Ladder", "definition": "Converting traditional IRA funds to Roth gradually over low-income years, paying taxes at favorable rates, with a 5-year waiting period for penalty-free access.", "tip": "Perfect for early retirees bridging the gap before 59½—start conversions 5 years before you need the money." },
-  { "term": "QTIP Trust", "definition": "Qualified Terminable Interest Property trust that provides income to a surviving spouse while controlling who inherits the principal, common in blended families.", "tip": "Ensures your spouse is cared for while guaranteeing assets eventually go to your children, not a new partner." },
-  { "term": "Step-Up in Basis", "definition": "When inheriting assets, the cost basis resets to the fair market value at death, erasing all previous capital gains.", "tip": "Highly appreciated assets are often better to hold until death than to gift during life—heirs avoid the tax." },
-  { "term": "Qualified Small Business Stock", "definition": "Stock from eligible startups held 5+ years can exclude up to $10 million in capital gains from federal taxes under Section 1202.", "tip": "Verify QSBS eligibility at purchase—this can save millions on a successful startup exit." },
-  { "term": "529 to Roth Rollover", "definition": "Starting in 2024, unused 529 funds (held 15+ years) can roll $35k lifetime to a Roth IRA for the beneficiary without penalties.", "tip": "Overfund 529s slightly—excess becomes tax-free retirement savings instead of facing penalties." },
-  { "term": "Solo 401(k)", "definition": "A retirement plan for self-employed individuals allowing contributions as both employee and employer, up to $69,000 annually (2024).", "tip": "With side income, you can max a regular 401(k) AND a Solo 401(k)—each has separate limits." },
-  { "term": "Substantially Equal Periodic Payments", "definition": "IRS Rule 72(t) allows penalty-free early withdrawals from retirement accounts if you commit to fixed payments for 5 years or until age 59½.", "tip": "Useful for early retirement but inflexible—once started, you can't modify without penalties." },
-  { "term": "Donor Advised Fund (DAF)", "definition": "A charitable account giving an immediate tax deduction while allowing you to recommend grants to charities over time.", "tip": "Donate appreciated stock directly to your DAF—avoid capital gains tax and deduct full fair market value." },
-  { "term": "Qualified Business Income Deduction", "definition": "Self-employed and small business owners can deduct up to 20% of qualified business income, reducing effective tax rates significantly.", "tip": "Complex phase-outs above $191k single/$383k married—consider S-corp election for optimization." },
-  { "term": "Tenancy by Entirety", "definition": "Property ownership available only to married couples providing creditor protection—one spouse's debts can't attach to jointly held property.", "tip": "In the right states, this protects your home from individual lawsuits better than joint tenancy." },
-  { "term": "Cost Segregation Study", "definition": "A tax strategy for rental property owners identifying components that can be depreciated faster than the building, accelerating deductions.", "tip": "On properties over $500k, this can create massive first-year deductions through bonus depreciation." },
-  { "term": "Net Unrealized Appreciation", "definition": "A strategy allowing you to withdraw company stock from a 401(k) in-kind, paying ordinary income tax only on the original cost, not current value.", "tip": "Massive savings if your company stock has appreciated significantly—capital gains rate on the appreciation instead of ordinary income." },
-  { "term": "Irrevocable Life Insurance Trust", "definition": "A trust that owns your life insurance policy, removing death benefits from your taxable estate while providing liquidity for estate taxes.", "tip": "Must be established 3 years before death to be effective—plan early for estates over the exemption." },
-  { "term": "Bunching Deductions", "definition": "Concentrating two years of charitable donations or other deductions into one year to exceed the standard deduction, then taking standard the next year.", "tip": "With a $29k+ standard deduction, bunching every other year makes itemizing worthwhile for more people." },
-  { "term": "Grantor Retained Annuity Trust", "definition": "An estate planning tool where you transfer assets to a trust, receive payments for a term, and pass remaining growth to heirs tax-free.", "tip": "Works best with assets expected to appreciate faster than the IRS hurdle rate—essentially a bet against the government." },
-  { "term": "Qualified Longevity Annuity Contract", "definition": "A deferred annuity you can buy with up to $200k from retirement accounts, reducing required minimum distributions while providing guaranteed late-life income.", "tip": "Pushes RMDs to age 85, reducing taxes in your 70s—useful for longevity insurance." },
-  { "term": "Form 8606", "definition": "IRS form tracking basis in traditional IRAs from non-deductible contributions, crucial for avoiding double taxation on Roth conversions.", "tip": "File every year you make non-deductible contributions—missing forms mean paying taxes twice on the same money." },
-  { "term": "Roth 401(k) vs Roth IRA", "definition": "Roth 401(k)s have no income limits and higher contributions but include RMDs, while Roth IRAs have income limits but no RMDs and easier withdrawals.", "tip": "Max Roth 401(k) then roll to Roth IRA at job change—get higher limits without RMDs." },
-  { "term": "Wash Sale Rule", "definition": "You can't claim a loss if you buy substantially identical securities within 30 days before or after the sale, creating a 61-day window.", "tip": "Buy similar but not identical funds to maintain exposure—swap SPY for VOO, not back to SPY." },
-  { "term": "Net Operating Loss (NOL)", "definition": "Business losses that exceed income can be carried forward indefinitely to offset future profits, reducing taxes in profitable years.", "tip": "Track these carefully if you have variable business income—they're valuable tax assets with no expiration." },
-  { "term": "Qualified Dividend Tax Rate", "definition": "Dividends from U.S. companies held 60+ days are taxed at favorable long-term capital gains rates (0%, 15%, or 20%), not ordinary income.", "tip": "This is why dividend stocks are better in taxable accounts than bonds—similar yield but better tax treatment." },
-  { "term": "1031 Exchange", "definition": "A tax strategy allowing real estate investors to defer capital gains by rolling proceeds from one property sale into another like-kind property.", "tip": "Strict 45-day identification and 180-day closing deadlines—miss them by one day and you owe all the taxes." },
-  { "term": "Kiddie Tax", "definition": "Unearned income over $2,500 for children under 18 (or students under 24) is taxed at the parents' marginal rate, not the child's lower rate.", "tip": "This killed the UTMA tax strategy—better to use 529s or Roth IRAs for kids now." },
-  { "term": "In-Service Distribution", "definition": "Some 401(k) plans allow you to roll funds to an IRA while still employed, gaining access to better investment options or Roth conversion strategies.", "tip": "Check your plan at age 59½—you might access better funds and lower fees without changing jobs." },
-  { "term": "Specific Identification", "definition": "Choosing which exact shares to sell for tax purposes instead of using FIFO, allowing you to optimize capital gains and losses.", "tip": "Always elect this with your broker—selling high-cost-basis shares minimizes taxes while maintaining positions." },
-  { "term": "10-Year Distribution Rule", "definition": "Non-spouse beneficiaries of inherited IRAs must withdraw all funds within 10 years post-SECURE Act, losing the old stretch strategy.", "tip": "Strategic annual withdrawals beat waiting until year 10—spreading tax burden is usually better than one massive hit." },
-  { "term": "Earnings Test (Social Security)", "definition": "If claiming Social Security before full retirement age while working, benefits reduce $1 for every $2 earned above $22,320 (2024).", "tip": "The money isn't lost—it's recalculated at full retirement age, effectively buying you a higher payment later." },
-  { "term": "Phantom Income", "definition": "Taxable income you must report without receiving cash, common in partnerships, mortgage forgiveness, or bond premium amortization.", "tip": "Plan liquidity for tax bills on partnership K-1s—owing taxes on income you didn't receive causes cash crunches." },
-  { "term": "Qualified Opportunity Zone", "definition": "Investing capital gains in designated economically distressed areas can defer and reduce taxes, with potential elimination if held 10+ years.", "tip": "Requires quick action—must invest gains within 180 days, and only works if you have large capital gains to defer." },
-  { "term": "Required Minimum Distribution", "definition": "Mandatory annual withdrawals from retirement accounts starting at 73, calculated by dividing balance by IRS life expectancy factor.", "tip": "First RMD can be delayed until April 1 of the following year—but you'll take two that year, possibly jumping tax brackets." },
-  { "term": "High-Income Child Benefit", "definition": "Employing your children in your business allows income shifting to their lower tax bracket while they fund Roth IRAs with earned income.", "tip": "Must be legitimate work at reasonable pay—$13,850 (2024) pays zero federal tax and builds their Roth." },
-  { "term": "Loss Limitation Rules", "definition": "Passive activity losses can only offset passive income, not wages or portfolio income, trapping real estate losses for many investors.", "tip": "Active real estate professionals can exempt from this if 750+ hours annually and it's their primary business." },
-  { "term": "Section 83(b) Election", "definition": "A startup employee filing declaring the value of restricted stock at grant to pay taxes on low value now instead of higher value at vesting.", "tip": "Must file within 30 days of grant—missing this deadline means paying ordinary income tax on full vested value." },
-  { "term": "Spousal IRA", "definition": "A non-working or low-earning spouse can contribute to an IRA based on the working spouse's income, doubling household retirement savings.", "tip": "Combined with worker's IRA, couples can save $14,000 annually even with one income." },
-  { "term": "Cafeteria Plan (Section 125)", "definition": "Pre-tax employee benefits like FSA, commuter benefits, and health insurance premiums, reducing taxable income and payroll taxes.", "tip": "Max out pre-tax options before Roth contributions—you can't beat avoiding 7.65% FICA plus income tax." },
-  { "term": "Basis Step-Down Risk", "definition": "In community property states, assets that depreciate before death get a stepped-down basis, potentially creating a taxable loss you can't claim.", "tip": "Consider gifting depreciated assets during life in community property states—recipients can use the loss." },
-  { "term": "Self-Directed IRA", "definition": "An IRA allowing alternative investments like real estate, private equity, or precious metals, with the same tax benefits but more complexity.", "tip": "Prohibited transaction rules are unforgiving—one mistake disqualifies the entire IRA, creating a massive tax bomb." },
-  { "term": "Primary Residence Exclusion", "definition": "Up to $250k single/$500k married of home sale gains are tax-free if you lived there 2 of the last 5 years.", "tip": "You can use this every 2 years—serial house flippers legally avoid massive capital gains this way." },
-  { "term": "Estate Tax Portability", "definition": "A surviving spouse can inherit their deceased spouse's unused estate tax exemption, potentially shielding $27M+ from estate taxes.", "tip": "Must file Form 706 within 9 months of death even if no estate tax is owed—missing this wastes millions." },
-  { "term": "Medicare IRMAA", "definition": "Income-Related Monthly Adjustment Amount increases Medicare premiums for high earners, adding $240-$700+ monthly per person based on MAGI from 2 years prior.", "tip": "Roth conversions and capital gains can trigger higher premiums two years later—plan multi-year tax strategies carefully." },
-  { "term": "Constructive Receipt", "definition": "IRS doctrine that income is taxable when available to you, even if you choose not to take it—can't defer by leaving checks uncashed.", "tip": "Year-end bonuses and dividends are taxable when credited to your account, not when you withdraw them." },
-  { "term": "Net Worth Allocation", "definition": "The intentional distribution of assets across account types (taxable, tax-deferred, tax-free) and asset classes to optimize taxes and access.", "tip": "Bonds in IRAs, growth stocks in Roth, tax-efficient index funds in taxable—location matters as much as allocation." },
-  { "term": "Marginal Dollar Analysis", "definition": "Evaluating financial decisions based on the next dollar earned or spent, not average amounts, revealing true costs and benefits.", "tip": "Your effective tax rate doesn't matter for decisions—only your marginal rate on the next dollar counts." },
-  { "term": "Financial Independence Number", "definition": "The portfolio size needed to sustain your lifestyle indefinitely, typically annual spending divided by safe withdrawal rate (spending ÷ 0.04).", "tip": "Spending $60k annually needs $1.5M at 4% rule—reducing spending by $10k saves needing $250k more." },
-  { "term": "Anchoring Bias", "definition": "Over-relying on the first piece of information encountered, like a stock's purchase price, causing irrational hold decisions despite new information.", "tip": "What you paid for an investment is irrelevant to what you should do with it today—only future prospects matter." },
-  { "term": "Tax Gain Harvesting", "definition": "Selling appreciated investments to realize gains at favorable rates, then repurchasing to increase basis and reduce future taxes.", "tip": "In 0% capital gains years (retirement, sabbatical), sell winners to lock in tax-free gains and reset the clock." },
-  { "term": "Clawback Provision", "definition": "Estate tax concern where gifts made within 3 years of death using the higher exemption might be taxed if exemption drops before death.", "tip": "This sunset risk in 2026 makes large gifts now potentially valuable—exemption might halve to $7M per person." },
-  { "term": "Five-Year Rule (Roth)", "definition": "Roth IRA earnings can't be withdrawn tax-free until 5 years after your first contribution, separate from the age 59½ rule.", "tip": "Open a Roth today even with $1—starting the 5-year clock matters more than the contribution amount." },
-  { "term": "Break-Even Analysis", "definition": "Calculating when one financial decision becomes better than another, like when pension delay pays off or when refinancing recovers closing costs.", "tip": "Social Security break-even between 62 and 67 is around age 78-80—health and longevity expectations matter more than math." },
-  { "term": "Concentration Risk", "definition": "Having too much wealth tied to a single investment, company, or asset class, magnifying the impact of that one holding's performance.", "tip": "If company stock exceeds 10% of net worth, you're basically making a concentrated bet—diversify despite loyalty." },
-  { "term": "Sequence of Savings Risk", "definition": "The danger that delaying savings early in your career requires much larger contributions later to reach the same goal due to lost compounding time.", "tip": "Starting at 25 vs 35 means $500/month vs $1,200/month for the same retirement—the first decade is the cheapest." },
-  { "term": "Tax Alpha", "definition": "The additional after-tax return generated through tax-efficient strategies like asset location, loss harvesting, and withdrawal sequencing.", "tip": "Tax alpha of 0.5-1% annually compounds to hundreds of thousands over a career—it rivals investment selection in importance." },
-  { "term": "Mortality Credits", "definition": "The return boost in annuities from pooling longevity risk—payouts from those who die early subsidize payments to those who live long.", "tip": "This is why annuities can pay more than bonds of similar risk—you're betting you'll outlive the average." },
-  { "term": "Reverse Dollar-Cost Averaging", "definition": "The risk that withdrawing fixed amounts in retirement means selling more shares in down markets, potentially depleting portfolios faster.", "tip": "Flexible spending in retirement—cutting discretionary expenses 10% in down years dramatically improves success rates." },
-  { "term": "Mental Accounting", "definition": "Treating money differently based on its source or intended use, like splurging bonuses while hoarding savings, despite money being fungible.", "tip": "A dollar is a dollar regardless of source—treating tax refunds as 'free money' leads to poor financial decisions." },
-  { "term": "Sunk Cost Fallacy", "definition": "Continuing an endeavor because of previously invested resources (time, money) even when abandoning it would be more rational.", "tip": "Past losses are irrelevant to future decisions—sell losing investments based on future prospects, not what you paid." },
-  { "term": "Recency Bias", "definition": "Overweighting recent events when making decisions, like assuming strong market performance will continue or avoiding stocks after crashes.", "tip": "The best time to invest is often when it feels worst—markets reward those who fight recency bias with discipline." },
-  { "term": "Geographic Arbitrage", "definition": "Earning income in high-wage areas while living in low-cost areas, or retiring abroad, to maximize purchasing power and savings rate.", "tip": "Remote work enables this domestically—San Francisco wages with Midwest living costs can accelerate FIRE by years." },
-  { "term": "Barista FIRE", "definition": "Reaching partial financial independence where investment returns cover most expenses, requiring only part-time work to cover the gap and maintain benefits.", "tip": "A $750k portfolio supporting $30k/year means you only need $20-30k from part-time work—achievable years before full FIRE." },
-  { "term": "Coastline FIRE", "definition": "Saving aggressively early until investments can grow to retirement goals without additional contributions, allowing career flexibility.", "tip": "Reaching $300k by 35 means you can stop contributing and still have $2.4M at 65—compound growth does the heavy lifting." },
-  { "term": "Real Return", "definition": "Investment return after accounting for inflation, representing true purchasing power growth—a 7% return with 3% inflation is 4% real.", "tip": "Always plan in real returns—historical 10% nominal stock returns are only 7% real after inflation." },
-  { "term": "Duration Matching", "definition": "Aligning bond portfolio duration with your time horizon for expenditures, reducing interest rate risk when you need the money.", "tip": "If you need money in 5 years, keep bond duration around 5 years—when rates rise, you reinvest at higher yields as bonds mature." },
-  { "term": "Active Share", "definition": "A measure of how different a fund's holdings are from its benchmark—funds with 80%+ active share that just charge high fees.", "tip": "Many 'active' funds have 60% active share but charge 1%+ fees—you're paying for closet indexing." },
-  { "term": "Expense Multiplier", "definition": "To maintain your lifestyle in retirement, you need to save 25x an expense (at 4% withdrawal rate)—cutting $100/month saves needing $30k.", "tip": "Every $1,000/month in retirement costs requires $300k saved—this math makes cutting expenses incredibly powerful." },
-  { "term": "Human Capital", "definition": "The present value of your future earning potential—younger people have more human capital, justifying higher stock allocation.", "tip": "In your 20s-30s, your future earnings dwarf investments—aggressive equity allocation makes sense with decades of stable income ahead." },
-  { "term": "Rebalancing Bonus", "definition": "The return enhancement from selling high and buying low through systematic rebalancing, separate from the risk reduction benefit.", "tip": "Annual rebalancing adds 0.3-0.5% average return by forcing buy-low, sell-high discipline without timing the market." },
-  { "term": "Tax Diversification", "definition": "Having assets across taxable, tax-deferred, and tax-free accounts provides flexibility to manage tax brackets in retirement.", "tip": "Mix of traditional and Roth gives control over taxable income—crucial for managing IRMAA, ACA subsidies, and bracket optimization." },
-  { "term": "Front-Load vs Back-Load", "definition": "The choice between paying fees/taxes now (Roth, A-share funds) or later (Traditional IRA, C-share funds), depending on rate changes.", "tip": "Front-loading works when current rates are lower than future rates—back-loading when future rates will be lower." },
-  { "term": "Roth Conversion Sweet Spot", "definition": "The optimal income range for conversions—high enough to use the bracket but low enough to avoid the next bracket or benefit phase-outs.", "tip": "Fill the 24% bracket but stop before 32%—converting at 24% and withdrawing at 12-22% later is pure tax arbitrage." },
-  { "term": "Time Horizon Mismatch", "definition": "The mistake of using short-term investments for long-term goals or vice versa, sacrificing returns or taking unnecessary risk.", "tip": "Retirement money 30 years away shouldn't be in bonds yielding 4%—you're accepting certain low returns to avoid temporary volatility." },
-  { "term": "Withdrawal Rate Flexibility", "definition": "The ability to adjust spending based on portfolio performance and market conditions, dramatically improving retirement success rates.", "tip": "Starting at 5% with willingness to cut to 3.5% in bad years gives 95%+ success vs 4% rigid giving 90%." },
-  { "term": "Legacy vs Lifestyle", "definition": "The fundamental retirement planning choice between maximizing inheritance for heirs versus maximizing personal spending.", "tip": "If legacy doesn't matter, you can spend more—higher withdrawal rates, annuities, and reverse mortgages become viable." },
-  { "term": "Geographic Tax Arbitrage", "definition": "Strategically choosing tax-friendly states for residence or domicile to minimize state income, property, and estate taxes.", "tip": "Moving from California to Florida before a major liquidity event can save 13.3% on millions—worth the hassle for large exits." },
-  { "term": "Contribution Timing", "definition": "The choice between contributing to retirement accounts at the beginning versus end of the year, with early contributions adding an extra year of growth.", "tip": "Front-loading your IRA in January instead of next April gains 15 months of compounding—worth 1-2 years of contributions over a career." },
-  { "term": "Dividend Drag", "definition": "The tax inefficiency in taxable accounts when funds distribute dividends annually, creating ongoing tax bills even without selling shares.", "tip": "In taxable accounts, favor growth stocks or tax-managed index funds over high-dividend funds to control when you pay taxes." },
-  { "term": "Home Equity Myths", "definition": "The misconception that paying off your mortgage early is always optimal, ignoring opportunity cost and liquidity concerns.", "tip": "With a 3% mortgage and 8% expected stock returns, paying extra principal costs you 5% annually in lost opportunity." },
-  { "term": "Inflation-Protected Securities", "definition": "Treasury Inflation-Protected Securities (TIPS) adjust principal with inflation, guaranteeing real returns but offering lower nominal yields.", "tip": "TIPS make sense for retirement money in 5-10 years—you lock in real purchasing power regardless of inflation." },
-  { "term": "Financial Slack", "definition": "Maintaining excess liquidity beyond emergency funds to capitalize on opportunities or weather extended job loss without selling investments.", "tip": "Keep 12-24 months expenses accessible—allows buying market dips, career pivots, or sabbaticals without financial stress." }
+  {
+    "term": "Loss Aversion",
+    "definition": "The tendency to feel losses more intensely than equivalent gains, often causing investors to hold losers too long or sell winners too early.",
+    "tip": "Losses feel twice as painful as gains feel good. Recognize this bias when tempted to panic sell during downturns.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Emergency Fund",
+    "definition": "Cash reserves covering 3-6 months of essential expenses, providing a buffer against income loss or unexpected costs.",
+    "tip": "Keep in a high-yield savings account for liquidity. This isn't for investing—it's insurance against needing to sell investments at bad times.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Debt Avalanche Method",
+    "definition": "Paying off debts in order of highest interest rate first, minimizing total interest paid.",
+    "tip": "Mathematically optimal. List all debts by rate, pay minimums on all, and throw every extra dollar at the highest-rate debt.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Step-Up in Basis",
+    "definition": "When you inherit assets, the cost basis resets to the value at the original owner's death, eliminating unrealized capital gains.",
+    "tip": "This makes holding appreciated assets until death extremely tax-efficient. Consider gifting assets with losses, keeping those with gains.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Savings Rate",
+    "definition": "The percentage of your income that you save and invest, the single most important variable in building wealth.",
+    "tip": "A 50% savings rate means every working year funds a year of retirement. Track this number obsessively and optimize ruthlessly.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "ACA Marketplace",
+    "definition": "Health insurance exchanges created by the Affordable Care Act where individuals can shop for coverage and access subsidies.",
+    "tip": "If self-employed or early retired without employer coverage, the ACA marketplace is your primary option. Open enrollment is Nov 1 - Jan 15.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "Salary Negotiation",
+    "definition": "The process of advocating for higher compensation during hiring or performance reviews.",
+    "tip": "Research market rates on levels.fyi or Glassdoor. A single successful negotiation can be worth $100k+ over your career.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Term Life Insurance",
+    "definition": "Pure death benefit coverage for a specified term, providing maximum protection per premium dollar without cash value.",
+    "tip": "Buy 10-15x your income for the period your dependents need protection. Term is usually 5-10x cheaper than whole life for the same coverage.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Asset Allocation",
+    "definition": "The strategic distribution of investments across asset classes like stocks, bonds, and cash based on your goals, timeline, and risk tolerance.",
+    "tip": "A common starting point: subtract your age from 110-120 for stock percentage. Adjust based on your risk capacity and human capital.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Price-to-Earnings Ratio",
+    "definition": "Stock price divided by earnings per share, indicating how much investors pay for each dollar of company earnings.",
+    "tip": "A P/E of 20 means you're paying $20 for $1 of earnings. Compare to historical averages and peers, but don't use in isolation.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "Primary Residence Exclusion",
+    "definition": "Excluding up to $250,000 ($500,000 married) of capital gains on the sale of your primary home from taxation.",
+    "tip": "You must have owned and lived in the home for 2 of the past 5 years. This is one of the largest tax breaks available.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "401(k) Contribution",
+    "definition": "Pre-tax or Roth contributions to an employer-sponsored retirement plan, reducing current taxable income or providing tax-free growth.",
+    "tip": "In 2026, you can contribute up to $24,500 ($32,500 if 50+, $35,750 if 60-63). At minimum, contribute enough to get the full employer match.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Social Security Claiming Age",
+    "definition": "The age you start receiving benefits—as early as 62 (reduced) or as late as 70 (increased by delayed retirement credits).",
+    "tip": "Each year you delay from 62 to 70 increases benefits roughly 7-8%. For most people, waiting until 70 maximizes lifetime benefits.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "HSA Triple Tax Advantage",
+    "definition": "Health Savings Accounts offer tax-deductible contributions, tax-free growth, and tax-free withdrawals for qualified medical expenses.",
+    "tip": "In 2026, contribute $4,400 (self) or $8,750 (family). Pay medical expenses out-of-pocket now, invest the HSA, and withdraw tax-free decades later.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Tax Loss Harvesting",
+    "definition": "Selling investments at a loss to offset capital gains taxes, then reinvesting in similar (but not identical) assets to maintain market exposure.",
+    "tip": "Harvest losses in taxable accounts annually, but wait 31 days before repurchasing to avoid wash sale rules.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Confirmation Bias",
+    "definition": "Seeking information that supports your existing beliefs while ignoring contradictory evidence.",
+    "tip": "Actively seek out opposing viewpoints on your investment thesis. If you can't argue the other side, you don't fully understand your position.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Pay Yourself First",
+    "definition": "Automatically saving and investing before paying other expenses, treating savings as a non-negotiable expense.",
+    "tip": "Set up automatic transfers on payday. If you save what's left after spending, you'll save nothing. Spend what's left after saving.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Debt Snowball Method",
+    "definition": "Paying off debts in order of smallest balance first, regardless of interest rate, for psychological quick wins.",
+    "tip": "Not mathematically optimal, but the motivation from early wins helps many people stay on track. Choose the method you'll actually follow.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Estate Tax Exemption",
+    "definition": "The amount you can transfer at death without federal estate tax. In 2026, it's $15 million per person ($30 million for married couples).",
+    "tip": "Most people won't owe estate tax. But state estate taxes start much lower—as low as $1 million in some states.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "FIRE Number",
+    "definition": "The portfolio size needed to cover your annual expenses indefinitely, typically 25x annual spending based on the 4% rule.",
+    "tip": "If you spend $60,000/year, your FIRE number is $1.5 million. Reduce spending and you lower the target while increasing savings rate.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Premium Tax Credit",
+    "definition": "Subsidies that reduce health insurance costs for those purchasing coverage through ACA marketplaces, based on income.",
+    "tip": "In 2026, the subsidy cliff returns at 400% FPL ($62,600 single). Going $1 over means losing all subsidies—manage income carefully.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "RSU Taxation",
+    "definition": "Restricted Stock Units are taxed as ordinary income when they vest, based on the stock price at vesting.",
+    "tip": "Plan for the tax hit—vesting creates immediate income. Consider selling immediately to diversify unless you have high conviction in the company.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Disability Insurance",
+    "definition": "Income replacement coverage if illness or injury prevents you from working, protecting your most valuable asset—your earning power.",
+    "tip": "Aim for coverage replacing 60-70% of income. Get own-occupation coverage if possible—it pays if you can't do your specific job.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Index Fund Investing",
+    "definition": "Buying funds that track a market index, providing broad diversification at minimal cost without attempting to beat the market.",
+    "tip": "Over 15-year periods, roughly 90% of active managers underperform their index. Keep it simple with total market index funds.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Yield Curve",
+    "definition": "A graph showing interest rates across different bond maturities, with an inverted curve historically predicting recessions.",
+    "tip": "When short-term rates exceed long-term rates (inversion), it often signals economic trouble. Useful context, but don't try to time markets.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "1031 Exchange",
+    "definition": "Deferring capital gains taxes on investment property by reinvesting proceeds into a like-kind property within strict timelines.",
+    "tip": "You have 45 days to identify and 180 days to close on replacement property. Work with a qualified intermediary—don't touch the funds.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Roth vs Traditional 401(k)",
+    "definition": "Traditional contributions reduce current taxes with taxable withdrawals; Roth contributions are after-tax but withdrawals are tax-free.",
+    "tip": "If your current marginal rate is lower than your expected retirement rate, favor Roth. Most early-career workers should prioritize Roth.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Social Security Earnings Test",
+    "definition": "Benefits are reduced if you earn above certain thresholds while claiming before full retirement age.",
+    "tip": "In 2026, benefits reduce $1 for every $2 earned above $24,480 if under FRA. Reductions are credited back later, not truly lost.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "HSA Investment Strategy",
+    "definition": "Rather than spending HSA funds on current medical costs, invest them for long-term growth and reimburse yourself years later.",
+    "tip": "Save medical receipts indefinitely. There's no deadline to reimburse yourself, so let your HSA compound for 20+ years.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Tax Gain Harvesting",
+    "definition": "Strategically selling appreciated assets when your income is low enough to qualify for the 0% long-term capital gains rate.",
+    "tip": "In 2026, singles can realize up to $49,450 in gains at 0% tax. Fill this bracket in low-income years or during career transitions.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Recency Bias",
+    "definition": "Overweighting recent events and extrapolating them into the future, assuming current trends will continue indefinitely.",
+    "tip": "After a bull market, we expect more gains. After crashes, we expect more losses. Base decisions on long-term data, not recent returns.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Zero-Based Budgeting",
+    "definition": "Allocating every dollar of income to specific categories so income minus expenses equals zero.",
+    "tip": "Every dollar has a job—spending, saving, investing, or giving. Nothing is 'left over' to fritter away unconsciously.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Student Loan Strategies",
+    "definition": "Optimizing repayment through income-driven plans, public service forgiveness, or aggressive payoff depending on your situation.",
+    "tip": "If pursuing PSLF, stay on IDR plans and make 120 qualifying payments. If not, consider refinancing high-rate loans once rates drop.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Annual Gift Exclusion",
+    "definition": "The amount you can give to any individual each year without gift tax implications or using your lifetime exemption.",
+    "tip": "In 2026, you can give $19,000 per recipient ($38,000 from a married couple). Great for reducing your taxable estate over time.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "The 4% Rule",
+    "definition": "A guideline suggesting you can withdraw 4% of your portfolio in year one of retirement, adjusting for inflation, with low risk of running out over 30 years.",
+    "tip": "Based on historical U.S. returns. Consider 3.25-3.5% for longer retirements, international investors, or extra safety margin.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "HDHP Strategy",
+    "definition": "Using a High Deductible Health Plan to access HSA benefits, accepting higher out-of-pocket costs for lower premiums and tax advantages.",
+    "tip": "HDHPs make sense if you're healthy and can max the HSA. The tax savings often exceed the higher deductible risk.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "ISO vs NSO",
+    "definition": "Incentive Stock Options have favorable tax treatment if held; Non-Qualified Stock Options are taxed as ordinary income at exercise.",
+    "tip": "ISOs can qualify for long-term capital gains if you hold 2 years from grant and 1 year from exercise. But watch for AMT on the spread.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Umbrella Insurance",
+    "definition": "Excess liability coverage that kicks in after your auto and home policy limits are exhausted, protecting against catastrophic lawsuits.",
+    "tip": "A $1M umbrella policy typically costs $150-300/year. Get coverage equal to your net worth plus future earnings at risk.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Expense Ratio",
+    "definition": "The annual fee charged by mutual funds or ETFs, expressed as a percentage of your investment.",
+    "tip": "A 1% expense ratio vs 0.03% costs you roughly 20% of your portfolio over 30 years. Choose funds with ratios under 0.20%.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Bond Duration",
+    "definition": "A measure of bond price sensitivity to interest rate changes—longer duration means higher volatility.",
+    "tip": "If rates rise 1%, a bond with 10-year duration loses roughly 10%. In rising rate environments, favor shorter duration.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "Cost Segregation Study",
+    "definition": "A tax strategy for rental property owners that accelerates depreciation by classifying components into shorter-life categories.",
+    "tip": "Can front-load deductions significantly. Most valuable for properties worth $500k+ and owners with high current income.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Employer Match",
+    "definition": "Free money your employer contributes to your 401(k) based on your own contributions, typically matching 50-100% up to a percentage of salary.",
+    "tip": "This is an instant 50-100% return. Never leave match money on the table—it's the highest-ROI investment decision you'll make.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Spousal Social Security Benefits",
+    "definition": "A spouse can claim up to 50% of the higher earner's benefit, providing a floor for couples with unequal earnings histories.",
+    "tip": "The lower earner should compare their own benefit to 50% of spouse's. Often better for high earner to delay, maximizing the spousal benefit.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "HSA as Stealth IRA",
+    "definition": "After age 65, HSA funds can be withdrawn for any purpose (not just medical) with only income tax owed—like a traditional IRA.",
+    "tip": "Max your HSA every year. Worst case, it becomes another retirement account. Best case, it covers medical costs tax-free.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Bunching Deductions",
+    "definition": "Concentrating itemizable expenses into a single tax year to exceed the standard deduction, then taking the standard deduction in alternate years.",
+    "tip": "With the 2026 standard deduction at $16,100 (single) or $32,200 (married), bunch charitable donations and medical expenses into one year.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Anchoring Bias",
+    "definition": "Fixating on a specific reference point (like a purchase price or all-time high) when making decisions.",
+    "tip": "Your cost basis is irrelevant to future returns. The question isn't 'Am I up or down?' but 'Is this the best use of this money today?'",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "50/30/20 Rule",
+    "definition": "A budgeting framework allocating 50% of income to needs, 30% to wants, and 20% to savings and debt repayment.",
+    "tip": "A useful starting point, but adjust based on your goals. FIRE pursuers might target 50% or higher savings rates.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Mortgage Arbitrage",
+    "definition": "Keeping a low-rate mortgage while investing the difference rather than paying it off early.",
+    "tip": "If your mortgage rate is 3% and investments return 7%, the spread builds wealth faster than prepayment. But only with money you'll actually invest.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Revocable Living Trust",
+    "definition": "A trust you control during your lifetime that transfers assets to beneficiaries at death without probate.",
+    "tip": "Avoids probate delays and keeps your affairs private, but doesn't provide tax benefits. Most valuable with real estate in multiple states.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Coast FIRE",
+    "definition": "Having enough invested that compounding alone will grow your portfolio to support retirement, eliminating the need to save more.",
+    "tip": "Once you hit Coast FIRE, you can take lower-paying but more fulfilling work. The math: if you have $200k at 30, it grows to $2M+ by 65.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Generic vs Brand Medications",
+    "definition": "Generic drugs contain the same active ingredients as brand-name versions at a fraction of the cost.",
+    "tip": "Always ask for generics when available. Use GoodRx or similar tools to compare pharmacy prices—they vary dramatically.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "83(b) Election",
+    "definition": "A tax election to pay ordinary income tax on restricted stock at grant rather than vesting, potentially converting future gains to capital gains.",
+    "tip": "Must file within 30 days of grant—no extensions. Valuable if you expect significant appreciation and can afford the immediate tax.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Self-Insurance",
+    "definition": "Intentionally retaining risk and paying for losses out of pocket rather than purchasing insurance coverage.",
+    "tip": "As your wealth grows, raise deductibles on auto and home insurance. You're essentially self-insuring smaller losses at lower premium costs.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Dollar Cost Averaging",
+    "definition": "Investing a fixed amount at regular intervals regardless of market conditions, reducing the impact of volatility.",
+    "tip": "Automate contributions from each paycheck. You'll buy more shares when prices are low and fewer when high.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Market Capitalization",
+    "definition": "Total market value of a company's outstanding shares (share price × shares outstanding), used to categorize company size.",
+    "tip": "Large-cap (>$10B), mid-cap ($2-10B), small-cap (<$2B). Smaller companies historically offer higher returns with higher volatility.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "Depreciation Recapture",
+    "definition": "When selling rental property, previously claimed depreciation is 'recaptured' and taxed at up to 25%.",
+    "tip": "Depreciation isn't truly free—it's a deferral. Use 1031 exchanges to defer recapture indefinitely, or pass to heirs for step-up basis.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Vesting Schedule",
+    "definition": "The timeline over which you earn ownership of employer contributions to your retirement accounts.",
+    "tip": "Check if your employer uses cliff vesting (all at once) or graded vesting (gradual). Factor this into job-change decisions.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Delayed Retirement Credits",
+    "definition": "Bonus increases to Social Security benefits for each month you delay claiming past full retirement age, up to age 70.",
+    "tip": "Benefits grow 8% per year from FRA to 70. That's a guaranteed return you can't get elsewhere—and it's inflation-adjusted.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "FSA Use-It-Or-Lose-It",
+    "definition": "Flexible Spending Account funds typically must be used by year-end or a short grace period, or they're forfeited.",
+    "tip": "Only contribute what you're confident you'll spend. Check if your plan offers a $640 rollover or 2.5-month grace period.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Marginal vs Effective Tax Rate",
+    "definition": "Your marginal rate is the tax on your next dollar of income; your effective rate is total tax divided by total income.",
+    "tip": "Don't fear earning more due to 'moving into a higher bracket'—only the income above the threshold is taxed at the higher rate.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Sunk Cost Fallacy",
+    "definition": "Continuing a behavior or investment because of previously invested resources rather than future expected value.",
+    "tip": "Money already spent is gone regardless of your next decision. Ask: 'Would I buy this investment today at this price?' If no, consider selling.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Sinking Funds",
+    "definition": "Designated savings buckets for irregular but predictable expenses like car repairs, vacations, or annual insurance.",
+    "tip": "Create separate savings buckets for large periodic expenses. Contributes monthly so you're never caught off guard.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Credit Card Optimization",
+    "definition": "Using credit cards strategically for rewards while paying the full balance monthly to avoid interest.",
+    "tip": "2-5% back in rewards is meaningful. Use category-specific cards for maximum returns, but never carry a balance.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Irrevocable Life Insurance Trust",
+    "definition": "A trust that owns your life insurance policy, keeping the death benefit out of your taxable estate.",
+    "tip": "Useful for high-net-worth individuals with estate tax exposure. You lose control of the policy but save potentially 40% in estate taxes.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Barista FIRE",
+    "definition": "Having enough saved to cover most expenses, but working part-time for healthcare benefits and supplemental income.",
+    "tip": "A middle ground between full FIRE and traditional retirement. Part-time work covers gaps and provides structure.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Direct Primary Care",
+    "definition": "A membership model where you pay a monthly fee for unlimited primary care visits, bypassing insurance for routine care.",
+    "tip": "Can work well paired with a high-deductible plan for catastrophic coverage. Monthly fees typically run $50-150.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "Equity Compensation Concentration",
+    "definition": "The risk of having too much wealth tied to your employer's stock through equity compensation.",
+    "tip": "Your job already depends on your company. Don't let your wealth depend on it too. Diversify RSUs when they vest.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Insurance Deductible Strategy",
+    "definition": "Choosing higher deductibles to lower premiums, effectively self-insuring smaller losses while maintaining catastrophic coverage.",
+    "tip": "Insurance is for catastrophes, not minor expenses. A $1,000 deductible vs $250 can save hundreds annually in premiums.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Portfolio Rebalancing",
+    "definition": "Periodically adjusting your portfolio back to target allocations by selling winners and buying underperformers.",
+    "tip": "Rebalance annually or when allocations drift more than 5% from targets. Use new contributions to rebalance when possible to minimize taxes.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Beta and Volatility",
+    "definition": "Beta measures how much a stock moves relative to the market. Beta > 1 means more volatile; < 1 means less volatile.",
+    "tip": "High-beta stocks amplify market moves both up and down. Know your holdings' beta to understand portfolio volatility.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "House Hacking",
+    "definition": "Living in a multi-unit property while renting out other units, using rental income to reduce or eliminate your housing costs.",
+    "tip": "Buy a duplex, triplex, or fourplex with an owner-occupant loan (lower rates, lower down payment). Live in one unit, rent the others.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Backdoor Roth IRA",
+    "definition": "A strategy where high earners contribute to a traditional IRA then immediately convert to Roth, bypassing income limits.",
+    "tip": "In 2026, Roth IRA income limits start at $153k (single). If you're above this, use backdoor. But first, check for existing traditional IRA balances.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "IRMAA Medicare Surcharge",
+    "definition": "Income-Related Monthly Adjustment Amount—higher Medicare premiums for beneficiaries with income above certain thresholds.",
+    "tip": "In 2026, IRMAA kicks in at $109k (single) / $218k (married). Roth conversions in your 60s can prevent IRMAA surprises based on income from two years prior.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "Dependent Care FSA",
+    "definition": "A pre-tax account for childcare and dependent care expenses, reducing your taxable income.",
+    "tip": "In 2026, the limit increased to $7,500 (up from $5,000). If you have young children in daycare, this is significant tax savings.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Alternative Minimum Tax",
+    "definition": "A parallel tax system with fewer deductions that ensures high earners pay a minimum amount of tax regardless of deductions.",
+    "tip": "ISOs, large state tax deductions, and certain itemized deductions can trigger AMT. Run projections before exercising incentive stock options.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Herd Mentality",
+    "definition": "Following the crowd into popular investments rather than making independent decisions based on your own analysis.",
+    "tip": "By the time an investment is popular, it's often overpriced. The best returns usually come from buying what others are ignoring.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Automation Strategy",
+    "definition": "Setting up automatic transfers for bills, savings, and investments to remove friction and ensure consistency.",
+    "tip": "Automate everything possible. 401(k) contributions, IRA transfers, bill payments. Willpower is finite; automation is not.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Balance Transfer Strategy",
+    "definition": "Moving high-interest credit card debt to a 0% APR promotional card to accelerate payoff.",
+    "tip": "Calculate the transfer fee (typically 3-5%) against interest savings. Have a payoff plan before the promo rate expires.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "TOD and POD Accounts",
+    "definition": "Transfer on Death (brokerage) and Payable on Death (bank) designations that pass accounts directly to beneficiaries, avoiding probate.",
+    "tip": "A simple way to ensure accounts transfer immediately at death. Doesn't replace a will but simplifies the process for financial accounts.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Lean FIRE",
+    "definition": "Retiring early on a frugal budget, typically under $40,000/year in spending.",
+    "tip": "Achievable faster but leaves little margin for error. Ensure you can sustain the lifestyle long-term, not just tolerate it temporarily.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Medical Tourism",
+    "definition": "Traveling to other countries for medical procedures at significantly lower costs, especially for elective or expensive treatments.",
+    "tip": "Dental work, elective surgery, and fertility treatments can cost 50-80% less abroad. Research accredited facilities carefully.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "Side Income Taxation",
+    "definition": "Additional income from freelancing, gigs, or side businesses is subject to both income tax and self-employment tax.",
+    "tip": "Side income over $400 triggers self-employment tax (15.3%). Set aside 30-40% for taxes and make quarterly estimated payments.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Life Insurance Needs Analysis",
+    "definition": "Calculating how much coverage your dependents would need to maintain their lifestyle if you died.",
+    "tip": "Factor in income replacement, debt payoff, childcare costs, and college funding. Subtract existing assets. Review every few years.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Tax-Efficient Fund Placement",
+    "definition": "Strategically locating investments across account types to minimize taxes—placing tax-inefficient assets in tax-advantaged accounts.",
+    "tip": "Hold bonds and REITs in tax-advantaged accounts; keep stock index funds and international funds in taxable accounts.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Sharpe Ratio",
+    "definition": "Risk-adjusted return metric calculated as excess return over risk-free rate divided by standard deviation.",
+    "tip": "Higher Sharpe = better risk-adjusted returns. Compare funds or portfolios on a risk-adjusted basis, not just raw returns.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "Rental Property Deductions",
+    "definition": "Expenses like mortgage interest, repairs, insurance, property management, and depreciation that offset rental income.",
+    "tip": "Track every expense meticulously. A rental showing paper losses can offset W-2 income if you qualify as a real estate professional.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Mega Backdoor Roth",
+    "definition": "Contributing after-tax dollars to a 401(k) beyond the employee limit, then converting to Roth, potentially adding $40,000+ in Roth savings.",
+    "tip": "The 2026 total 401(k) limit is $72,000. If your plan allows after-tax contributions and in-service conversions, max this out.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Medicare Parts Explained",
+    "definition": "Part A covers hospital stays (usually free), Part B covers outpatient/doctor visits, Part D covers prescriptions, Part C (Advantage) bundles them.",
+    "tip": "Enroll in Part B during your initial enrollment period to avoid permanent premium penalties. Mark your 65th birthday on your calendar.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "529 Plan Basics",
+    "definition": "A tax-advantaged savings plan for education expenses, offering tax-free growth and withdrawals for qualified costs.",
+    "tip": "Contributions aren't federally deductible, but over 30 states offer state tax deductions. Check your state's plan first.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Quarterly Estimated Taxes",
+    "definition": "Tax payments made four times per year for income not subject to withholding, such as self-employment or investment income.",
+    "tip": "Pay at least 100% of last year's tax liability (110% if AGI exceeded $150k) to avoid underpayment penalties.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Overconfidence Bias",
+    "definition": "Overestimating your ability to pick winning investments or time the market.",
+    "tip": "Most professional investors underperform indexes. What makes you think you'll do better? Humility leads to better outcomes.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Cash Flow Timing",
+    "definition": "Aligning income and expense timing to maintain positive cash flow and avoid unnecessary overdrafts or interest.",
+    "tip": "Set bill due dates to align with your pay schedule. Most creditors will change due dates if you ask.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Refinancing Analysis",
+    "definition": "Evaluating whether replacing existing debt with new debt at a lower rate makes financial sense.",
+    "tip": "Calculate break-even: closing costs ÷ monthly savings = months to recoup. Only refinance if you'll stay past break-even.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Power of Attorney",
+    "definition": "A legal document authorizing someone to make financial decisions on your behalf if you become incapacitated.",
+    "tip": "Create a durable power of attorney before you need it. Without one, your family may need court approval to manage your affairs.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Fat FIRE",
+    "definition": "Retiring early with a high spending budget, maintaining or exceeding your current lifestyle without financial constraints.",
+    "tip": "Typically requires $2.5M+ portfolios. Takes longer to achieve but provides maximum flexibility and margin for unexpected expenses.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Preventive Care Value",
+    "definition": "Most health plans cover preventive services like annual physicals, vaccinations, and screenings at no cost.",
+    "tip": "Use your free preventive benefits annually. Early detection saves lives and money. Check your plan's covered services.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "1099 vs W-2",
+    "definition": "W-2 employees have taxes withheld and split payroll taxes with employers; 1099 contractors pay full self-employment tax and handle their own taxes.",
+    "tip": "As a 1099, you pay both halves of payroll tax. Factor this in when comparing rates—you need roughly 15% more to break even.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Beneficiary Designations",
+    "definition": "The named individuals or entities who receive your insurance proceeds, retirement accounts, and other assets at death.",
+    "tip": "Beneficiary designations override your will. Review them after major life events—marriage, divorce, births, deaths.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Total Stock Market Index",
+    "definition": "A fund tracking the entire U.S. stock market—large, mid, and small cap companies—in a single low-cost investment.",
+    "tip": "A total market fund like VTI or FSKAX provides instant diversification across 3,000+ companies. This can be your entire U.S. equity allocation.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Correlation",
+    "definition": "A statistical measure of how two investments move relative to each other, ranging from -1 (opposite) to +1 (identical).",
+    "tip": "Diversification benefits come from combining assets with low or negative correlation. Stocks and bonds typically have low correlation.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "Mortgage Interest Deduction",
+    "definition": "Itemized deduction for interest paid on mortgage debt up to $750,000 for your primary and secondary residence.",
+    "tip": "This only helps if your total itemized deductions exceed the standard deduction ($16,100 single / $32,200 married in 2026).",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Roth Conversion Ladder",
+    "definition": "Converting traditional IRA funds to Roth in annual installments, waiting 5 years per conversion before accessing penalty-free.",
+    "tip": "Early retirees can access retirement funds before 59½ by converting during low-income years, then withdrawing conversions after 5 years.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Medicare Enrollment Windows",
+    "definition": "Specific periods when you can enroll in or change Medicare coverage, with penalties for missing deadlines.",
+    "tip": "Your Initial Enrollment Period is 7 months around your 65th birthday. Missing it can mean 10% higher Part B premiums for life.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "529 Superfunding",
+    "definition": "Contributing up to 5 years of gift tax exclusions at once to a 529 plan, accelerating tax-free growth.",
+    "tip": "In 2026, you can contribute $95,000 ($190,000 for couples) in one year without gift tax, treating it as spread over 5 years.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "State Tax Arbitrage",
+    "definition": "Legally timing income recognition, retirement distributions, or residency changes to minimize state income taxes.",
+    "tip": "If relocating from a high-tax to no-tax state, delay bonuses and Roth conversions until after establishing residency.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Mental Accounting",
+    "definition": "Treating money differently based on its source or intended use, even though all dollars are fungible.",
+    "tip": "A 'bonus' isn't free money to spend carelessly. Treat every dollar the same—its source doesn't change its value.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Expense Tracking",
+    "definition": "Monitoring where your money goes to identify spending patterns, waste, and opportunities to optimize.",
+    "tip": "Track every expense for 3 months minimum. Most people are shocked by certain categories. Awareness precedes change.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Good Debt vs Bad Debt",
+    "definition": "Debt that finances appreciating assets or increases earning potential (good) versus debt for depreciating assets or consumption (bad).",
+    "tip": "A mortgage or student loans can be good debt. Car loans and credit card debt for consumption are almost always bad debt.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Healthcare Directive",
+    "definition": "A legal document specifying your medical treatment preferences and designating someone to make healthcare decisions if you cannot.",
+    "tip": "Also called a living will or advance directive. Every adult should have one, regardless of age or health.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Geographic Arbitrage",
+    "definition": "Moving to a lower cost-of-living area to reduce expenses, accelerating FIRE or stretching retirement savings.",
+    "tip": "Your FIRE number drops dramatically in cheaper regions. Consider remote work in LCOL areas or retiring abroad.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "COBRA Timing Strategy",
+    "definition": "Using the 60-day election window and retroactive coverage option to minimize COBRA costs when leaving a job.",
+    "tip": "Don't pay premiums unless you have a claim. You have 60 days to elect retroactively. If no claims, let it lapse and start new coverage.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "Severance Negotiation",
+    "definition": "Negotiating separation terms when leaving a job, potentially including extended pay, benefits continuation, and favorable references.",
+    "tip": "Everything is negotiable. Ask for extended health coverage, vesting acceleration, outplacement services, and a neutral reference.",
+    "topic": "income-career"
+  },
+  {
+    "term": "COBRA Coverage",
+    "definition": "Temporary health insurance continuation after leaving a job, at full cost plus a 2% administrative fee.",
+    "tip": "You have 60 days to elect COBRA retroactively. If healthy, wait and only elect if you have a major medical event during the gap.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "International Diversification",
+    "definition": "Allocating a portion of your portfolio to non-U.S. stocks to reduce country-specific risk and capture global growth.",
+    "tip": "Consider 20-40% international allocation. Hold these in taxable accounts to claim foreign tax credits on dividends.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Dollar-Weighted vs Time-Weighted Returns",
+    "definition": "Dollar-weighted accounts for cash flow timing; time-weighted ignores it, showing pure investment performance.",
+    "tip": "Your personal return (dollar-weighted) often differs from the fund's return (time-weighted) due to when you added or withdrew money.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "Real Estate Professional Status",
+    "definition": "A tax designation allowing rental losses to offset ordinary income without passive activity limitations.",
+    "tip": "Requires 750+ hours and more than half your working time in real estate. Powerful for high-earning couples where one spouse qualifies.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Traditional IRA",
+    "definition": "A tax-advantaged retirement account with potentially deductible contributions and tax-deferred growth until withdrawal.",
+    "tip": "If covered by a workplace plan, deductibility phases out at $79,000-$89,000 (single) in 2026. Above this, use backdoor Roth instead.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Social Security Taxation",
+    "definition": "Up to 85% of Social Security benefits can be taxable depending on your combined income.",
+    "tip": "Provisional income = AGI + half your SS benefits + tax-exempt interest. Keep it low through Roth conversions before claiming.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "529 to Roth Rollover",
+    "definition": "A provision allowing unused 529 funds to roll into a beneficiary's Roth IRA, subject to annual IRA limits and a $35,000 lifetime cap.",
+    "tip": "The 529 must be open 15+ years and funds must have been in the account 5+ years. A safety valve if education costs are overfunded.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Donor Advised Fund",
+    "definition": "A charitable giving account that provides an immediate tax deduction while allowing you to distribute grants to charities over time.",
+    "tip": "Contribute appreciated stock to avoid capital gains and bunch multiple years of giving into one large deduction.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Status Quo Bias",
+    "definition": "Preferring the current state of affairs over change, even when change would be beneficial.",
+    "tip": "Review your portfolio as if building it from scratch today. Would you still buy the same things in the same proportions?",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Anti-Budget",
+    "definition": "A simplified approach where you automate savings first, then spend the rest guilt-free without tracking categories.",
+    "tip": "If detailed budgeting doesn't work for you, just automate a high savings rate and spend the remainder freely. The key number is savings rate.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Debt-to-Income Ratio",
+    "definition": "Your monthly debt payments divided by gross monthly income, used by lenders to assess borrowing capacity.",
+    "tip": "Keep DTI below 36% for financial flexibility. Lower is better—it's also how lenders determine how much mortgage you can afford.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Spousal Portability",
+    "definition": "A surviving spouse can use their deceased spouse's unused estate tax exemption by making a timely election.",
+    "tip": "File an estate tax return within 9 months of death to elect portability, even if no tax is owed. This preserves up to $15 million in exemption.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Withdrawal Strategies",
+    "definition": "Systematic approaches to drawing down your portfolio in retirement, balancing longevity risk with lifestyle needs.",
+    "tip": "Consider variable withdrawal rates that adjust with portfolio performance. Reduce spending in down years to preserve capital.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Healthcare Sharing Ministry",
+    "definition": "Faith-based programs where members share medical costs, often with lower monthly costs but not technically insurance.",
+    "tip": "Not regulated like insurance—pre-existing conditions may not be covered. Can work for healthy individuals, but understand the risks.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "Job Hopping Premium",
+    "definition": "The higher salary increases typically achieved by changing employers compared to internal promotions.",
+    "tip": "Average raises are 3-5%. Job changes often yield 15-30%. Strategically switch employers every 2-3 years early in your career.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Long-Term Care Insurance",
+    "definition": "Coverage for extended care needs like nursing homes or in-home assistance that health insurance and Medicare don't cover.",
+    "tip": "Consider buying in your mid-50s when premiums are reasonable but you can still qualify. Hybrid life/LTC policies offer flexibility.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Bond Allocation",
+    "definition": "The percentage of your portfolio in fixed-income securities, providing stability and income to offset stock market volatility.",
+    "tip": "Bonds reduce portfolio volatility but lower expected returns. Increase bond allocation as you approach your goal date.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Regression to the Mean",
+    "definition": "The tendency for extreme performance to moderate over time, with outliers moving toward average results.",
+    "tip": "Last year's best-performing fund is rarely next year's. Don't chase performance—high returns often revert to average.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "REIT Investing",
+    "definition": "Real Estate Investment Trusts allow you to invest in real estate portfolios like stocks, without directly owning property.",
+    "tip": "REITs must distribute 90% of income as dividends, which are taxed as ordinary income. Hold in tax-advantaged accounts.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Roth IRA",
+    "definition": "A retirement account funded with after-tax dollars, offering tax-free growth and tax-free qualified withdrawals after age 59½.",
+    "tip": "In 2026, contribute up to $7,500 ($8,500 if 50+). The 5-year rule applies to earnings—open your Roth early to start the clock.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Social Security Break-Even Analysis",
+    "definition": "Calculating the age at which delaying benefits pays off compared to claiming early.",
+    "tip": "Break-even for claiming at 62 vs 70 is typically around age 80-82. If you expect to live beyond that, delaying wins.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "I Bonds",
+    "definition": "U.S. Treasury savings bonds with interest rates tied to inflation, providing principal protection and inflation-adjusted returns.",
+    "tip": "Purchase up to $10,000/year at TreasuryDirect.gov. Current rate is 4.03%. Hold at least 5 years to avoid the 3-month interest penalty.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "QBI Deduction",
+    "definition": "A 20% deduction on qualified business income for pass-through entities, sole proprietors, and certain self-employment income.",
+    "tip": "In 2026, the deduction phases out between $201,750-$276,750 (single). Stay below the threshold or maximize W-2 wages and property to preserve it.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Disposition Effect",
+    "definition": "The tendency to sell winning investments too quickly while holding losing investments too long.",
+    "tip": "Invert your instincts. Consider holding winners longer and cutting losers for tax losses. The opposite of what feels natural.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Subscription Audit",
+    "definition": "Regularly reviewing recurring charges to eliminate unused or low-value subscriptions draining your accounts.",
+    "tip": "Check your credit card statements for subscriptions you've forgotten. The average person wastes $200+/month on unused subscriptions.",
+    "topic": "cash-flow-budgeting"
+  },
+  {
+    "term": "Emergency Fund vs High-Interest Debt",
+    "definition": "The tension between building savings and paying off expensive debt, both of which are financial priorities.",
+    "tip": "Keep a small emergency buffer ($1-2k), then attack high-interest debt aggressively. Rebuild full emergency fund after debt is gone.",
+    "topic": "debt-optimization"
+  },
+  {
+    "term": "Charitable Remainder Trust",
+    "definition": "A trust providing income to you during your lifetime, with the remainder going to charity at death, generating an immediate tax deduction.",
+    "tip": "Useful for highly appreciated assets you want to sell. Avoids capital gains, provides income stream, and supports charity.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Guardrails Strategy",
+    "definition": "A withdrawal approach with upper and lower bounds that trigger spending adjustments based on portfolio performance.",
+    "tip": "If portfolio grows 20% above plan, increase spending. If it drops 20% below, cut back. Provides flexibility while maintaining safety.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Out-of-Pocket Maximum",
+    "definition": "The most you'll pay for covered healthcare services in a plan year, after which insurance covers 100%.",
+    "tip": "Once you hit this limit, all additional covered care is free that year. If facing major procedures, timing them in one year can save money.",
+    "topic": "healthcare-medical"
+  },
+  {
+    "term": "Skills Investment ROI",
+    "definition": "Evaluating the return on time and money spent acquiring new skills based on their impact on earning potential.",
+    "tip": "High-demand technical skills can yield 50-100% salary increases. Prioritize skills with clear market value over generic credentials.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Health Insurance Optimization",
+    "definition": "Choosing the right plan by comparing premiums, deductibles, out-of-pocket maximums, and expected healthcare usage.",
+    "tip": "If healthy, a high-deductible plan with HSA often wins. Run the math: premium savings + HSA tax benefits vs higher potential costs.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Target Date Fund",
+    "definition": "An all-in-one fund that automatically adjusts asset allocation from aggressive to conservative as you approach a target retirement year.",
+    "tip": "If you want simplicity, a target date fund is a great one-fund solution. Check the glide path and expense ratio before choosing.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Survivorship Bias",
+    "definition": "The tendency to focus on funds or investments that survived while ignoring those that failed or closed.",
+    "tip": "Fund performance data often excludes funds that were shut down for poor performance, making average returns look better than reality.",
+    "topic": "market-concepts"
+  },
+  {
+    "term": "PMI Removal",
+    "definition": "Private Mortgage Insurance can be removed once you reach 20% equity in your home, eliminating the monthly premium.",
+    "tip": "Request PMI cancellation at 20% equity. It's automatically removed at 22%, but why wait? You can also refinance or get a new appraisal.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "IRA Contribution Deadline",
+    "definition": "You have until the tax filing deadline (typically April 15) to make IRA contributions for the prior tax year.",
+    "tip": "Contribute early in the year rather than waiting. A January contribution has 15 more months of tax-advantaged growth than an April contribution.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Windfall Elimination Provision",
+    "definition": "A rule reducing Social Security benefits for those who receive pensions from work not covered by Social Security.",
+    "tip": "If you have a government pension, your Social Security may be reduced. Factor this into retirement planning if you've worked in public sector.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "I Bond Tax Deferral",
+    "definition": "I Bond interest can be tax-deferred until you redeem the bond or it matures after 30 years.",
+    "tip": "Unlike bank CDs, you control when to recognize I Bond income. Redeem in low-income years to minimize taxes.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Capital Gains Distribution",
+    "definition": "Taxable gains distributed by mutual funds when fund managers sell underlying securities, even if you didn't sell any shares.",
+    "tip": "Check funds' distribution schedules before buying in taxable accounts late in the year—you could owe taxes on gains you didn't benefit from.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "FOMO Investing",
+    "definition": "Making investment decisions driven by fear of missing out on gains others are experiencing.",
+    "tip": "Chasing hot stocks or crypto after big gains is reliably wealth-destroying. Stick to your plan. Boring is beautiful.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Qualified Personal Residence Trust",
+    "definition": "Transferring your home to a trust at a discounted value, removing future appreciation from your taxable estate.",
+    "tip": "You retain the right to live in the home for a set term. If you outlive the term, the home passes to heirs at the discounted gift value.",
+    "topic": "estate-planning"
+  },
+  {
+    "term": "Bond Tent",
+    "definition": "Temporarily increasing bond allocation around retirement to reduce sequence of returns risk, then gradually shifting back to stocks.",
+    "tip": "Peak bond allocation 5 years before through 5 years after retirement protects against early bear markets that could derail your plan.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Career Capital",
+    "definition": "The skills, credentials, connections, and reputation you accumulate that make you valuable in the job market.",
+    "tip": "Early career, optimize for learning and skill-building over salary. Career capital compounds and pays dividends for decades.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Short-Term Disability",
+    "definition": "Income replacement for temporary disabilities, typically covering 60% of salary for 3-6 months.",
+    "tip": "Check if your employer provides STD coverage before buying your own. It bridges the gap until long-term disability kicks in.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Three-Fund Portfolio",
+    "definition": "A simple, diversified portfolio consisting of just three funds: U.S. stocks, international stocks, and bonds.",
+    "tip": "Example: 60% total U.S. stock, 25% total international stock, 15% total bond. Rebalance annually. That's it.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Property Tax Appeal",
+    "definition": "Challenging your property's assessed value to potentially lower your property tax bill.",
+    "tip": "Compare your assessment to recent sales of similar homes. Most appeals are free to file and successful more often than people expect.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "Pro-Rata Rule",
+    "definition": "When converting IRA funds to Roth, the IRS treats all your traditional IRA balances as one pool, taxing conversions proportionally.",
+    "tip": "Before backdoor Roth, roll any existing traditional IRA balances into your 401(k) to avoid unexpected taxes on conversions.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Social Security Statement Review",
+    "definition": "Your annual statement showing estimated benefits and earnings history, available at ssa.gov.",
+    "tip": "Check your statement annually for errors. Mistakes in earnings history can permanently reduce your benefits.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "Municipal Bonds",
+    "definition": "Bonds issued by state and local governments, with interest typically exempt from federal income tax and sometimes state tax.",
+    "tip": "Munis make sense in taxable accounts for high earners. Compare taxable-equivalent yield: muni yield ÷ (1 - your marginal rate).",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Wash Sale Rule",
+    "definition": "IRS rule disallowing a tax loss if you buy substantially identical securities within 30 days before or after the sale.",
+    "tip": "When harvesting losses, switch to a similar but not identical fund (e.g., S&P 500 to Total Market) to stay invested.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Analysis Paralysis",
+    "definition": "Overthinking investment decisions to the point of inaction, missing out on returns while waiting for the 'perfect' moment.",
+    "tip": "A good plan executed now beats a perfect plan executed never. Start with a simple three-fund portfolio, then optimize over time.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Financial Independence Ratio",
+    "definition": "Your investment income divided by your expenses—reaching 100% means you're financially independent.",
+    "tip": "Track this monthly. Watching the ratio climb from 10% to 20% to 50% is incredibly motivating.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Multiple Income Streams",
+    "definition": "Diversifying your income sources beyond a single job to reduce risk and accelerate wealth building.",
+    "tip": "Rental income, dividends, side businesses, and consulting create resilience. Start building secondary streams while employed full-time.",
+    "topic": "income-career"
+  },
+  {
+    "term": "Insurance Policy Review",
+    "definition": "Periodically reassessing your insurance coverage to ensure it matches your current life situation and risks.",
+    "tip": "Review all policies annually. As net worth grows, you may need more umbrella coverage but can reduce life insurance.",
+    "topic": "insurance-risk"
+  },
+  {
+    "term": "Sequence of Returns Risk",
+    "definition": "The danger that poor investment returns early in retirement will permanently impair your portfolio's longevity.",
+    "tip": "Reduce stock allocation and build a cash buffer in the years before and after retirement to avoid selling stocks during a downturn.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Rent vs Buy Decision",
+    "definition": "Comparing the total cost of renting versus buying, accounting for opportunity cost, maintenance, transaction costs, and appreciation.",
+    "tip": "The 5% rule: if annual rent is less than 5% of the home's value, renting may be better. Run the numbers for your specific market.",
+    "topic": "real-estate"
+  },
+  {
+    "term": "IRA Rollover Rules",
+    "definition": "Moving retirement funds between accounts, with direct trustee-to-trustee transfers avoiding the 60-day indirect rollover limit.",
+    "tip": "Always request a direct rollover to avoid mandatory 20% withholding and the risk of missing the 60-day deadline.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "COLA Adjustments",
+    "definition": "Annual Cost of Living Adjustments that increase Social Security benefits based on inflation.",
+    "tip": "Benefits are inflation-protected, unlike most pensions. This makes Social Security extremely valuable—factor this into claiming decisions.",
+    "topic": "social-security-medicare"
+  },
+  {
+    "term": "Treasury Bills",
+    "definition": "Short-term government securities sold at a discount and maturing at face value, with interest exempt from state and local taxes.",
+    "tip": "T-bills offer competitive yields with minimal risk. In high-tax states, the state tax exemption adds meaningful extra return.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Net Investment Income Tax",
+    "definition": "An additional 3.8% tax on investment income for individuals with MAGI above $200,000 (single) or $250,000 (married).",
+    "tip": "This tax applies on top of capital gains rates. Factor in the extra 3.8% when deciding between Roth conversions and taxable investing.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Lifestyle Inflation",
+    "definition": "Increasing spending proportionally with income increases, preventing wealth accumulation despite higher earnings.",
+    "tip": "When you get a raise, immediately redirect at least half to savings before adjusting your lifestyle. You won't miss what you never had.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "One More Year Syndrome",
+    "definition": "Perpetually delaying retirement despite having enough, driven by fear of the unknown or desire for more cushion.",
+    "tip": "If you've hit your number, the risk of regret from not retiring often exceeds the financial risk of retiring. Life is finite.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Dividend Reinvestment",
+    "definition": "Automatically using dividend payments to purchase additional shares of the same investment.",
+    "tip": "Enable DRIP in tax-advantaged accounts for compounding. In taxable accounts, consider taking cash to control tax lot selection.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "In-Service Distribution",
+    "definition": "A provision allowing you to roll funds out of your 401(k) while still employed, often to access better investment options or Roth conversions.",
+    "tip": "Check if your plan allows in-service distributions for after-tax contributions—this enables the mega backdoor Roth strategy.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Opportunity Zone Investing",
+    "definition": "Tax incentives for investing capital gains in designated low-income communities, including deferral and potential exclusion of gains.",
+    "tip": "Complex and illiquid, but can eliminate taxes on new appreciation if held 10+ years. Only for sophisticated investors with large gains.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "Foreign Tax Credit",
+    "definition": "A dollar-for-dollar credit for taxes paid to foreign governments on foreign-source income, preventing double taxation.",
+    "tip": "Hold international funds in taxable accounts to claim the credit. In tax-advantaged accounts, you lose this benefit.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Hedonic Adaptation",
+    "definition": "The tendency to return to a baseline happiness level regardless of positive or negative life changes.",
+    "tip": "Expensive purchases provide shorter happiness boosts than expected. Spend on experiences and relationships, not stuff.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Side FIRE",
+    "definition": "Achieving financial independence while maintaining optional income streams from passion projects or part-time work.",
+    "tip": "You don't need to cover 100% with investments. A consistent $20k/year from enjoyable work reduces your FIRE number by $500k.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Lump Sum vs Dollar Cost Averaging",
+    "definition": "Choosing between investing a windfall all at once or spreading it over time to reduce timing risk.",
+    "tip": "Historically, lump sum beats DCA about two-thirds of the time. But if DCA helps you actually invest rather than wait, do that.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "Solo 401(k)",
+    "definition": "A retirement plan for self-employed individuals with no employees, allowing both employee and employer contributions.",
+    "tip": "In 2026, contribute up to $72,000 total ($24,500 employee + up to 25% of net self-employment income). Establish the plan by December 31.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "ABLE Account",
+    "definition": "A tax-advantaged savings account for individuals with disabilities, allowing savings without jeopardizing government benefits.",
+    "tip": "Contributions up to the annual gift exclusion ($19,000 in 2026) grow tax-free for disability-related expenses.",
+    "topic": "tax-advantaged-accounts"
+  },
+  {
+    "term": "SALT Deduction Cap",
+    "definition": "The $10,000 limit on state and local tax deductions (property, income, sales) for federal tax purposes.",
+    "tip": "If you're in a high-tax state and hitting the cap, prioritize pre-tax retirement contributions to reduce state taxable income.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Present Bias",
+    "definition": "Overvaluing immediate rewards at the expense of long-term benefits.",
+    "tip": "Automate savings and investments to remove the daily decision to prioritize your future self over present consumption.",
+    "topic": "behavioral-finance"
+  },
+  {
+    "term": "Roth Conversion Ladder for Early Retirement",
+    "definition": "Converting traditional IRA funds to Roth during early retirement, then accessing those conversions after 5 years.",
+    "tip": "In years with no income, convert up to the top of the 12% bracket (~$50,400 in 2026). After 5 years, withdraw conversions tax and penalty-free.",
+    "topic": "fire-independence"
+  },
+  {
+    "term": "Factor Investing",
+    "definition": "Tilting your portfolio toward characteristics historically associated with higher returns, such as value, small-cap, or momentum.",
+    "tip": "Factor premiums exist but aren't guaranteed. If you tilt, keep it modest (10-20%) and be prepared to underperform for years.",
+    "topic": "investment-strategy"
+  },
+  {
+    "term": "SEP IRA",
+    "definition": "A Simplified Employee Pension allowing self-employed individuals to contribute up to 25% of net self-employment income.",
+    "tip": "The 2026 limit is $72,000. SEP IRAs are simpler than Solo 401(k)s but don't allow employee contributions or Roth options.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Above-the-Line Deductions",
+    "definition": "Deductions subtracted from gross income to calculate AGI, available whether you itemize or take the standard deduction.",
+    "tip": "HSA contributions, student loan interest, and self-employment health insurance are above-the-line. Maximize these before chasing itemized deductions.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "SIMPLE IRA",
+    "definition": "A retirement plan for small businesses with 100 or fewer employees, with lower contribution limits but mandatory employer contributions.",
+    "tip": "The 2026 employee limit is $17,000 (+$4,000 catch-up). If you have a side business, a Solo 401(k) offers more flexibility.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Tax Alpha",
+    "definition": "The additional after-tax returns generated through tax-efficient investment strategies compared to a tax-unaware approach.",
+    "tip": "Asset location, tax-loss harvesting, and holding period optimization can add 0.5-1% annually. Compound that over decades.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "After-Tax 401(k) Contributions",
+    "definition": "Non-Roth contributions beyond the employee limit that grow tax-deferred, with earnings taxed upon withdrawal.",
+    "tip": "After-tax contributions are the key to mega backdoor Roth. Convert them quickly to minimize taxable earnings in the account.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Charitable Stock Donation",
+    "definition": "Donating appreciated securities directly to charity, avoiding capital gains tax while receiving a deduction for the full market value.",
+    "tip": "If you have stock with large unrealized gains, donate it instead of cash. You avoid up to 23.8% in taxes on the appreciation.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Catch-Up Contributions",
+    "definition": "Additional retirement contributions allowed for those 50 and older, increasing savings capacity in peak earning years.",
+    "tip": "In 2026, add $8,000 to 401(k)s or $1,000 to IRAs if 50+. Ages 60-63 get a 'super catch-up' of $11,250 for 401(k)s.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Tax Bracket Arbitrage",
+    "definition": "Shifting income between years or accounts to realize it in lower tax brackets over your lifetime.",
+    "tip": "Convert traditional IRA funds to Roth in years when you're in the 12% or 22% bracket, before RMDs push you higher.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "High-Earner Roth Catch-Up Rule",
+    "definition": "Starting 2026, employees earning over $150,000 in FICA wages must make catch-up contributions as Roth, not pre-tax.",
+    "tip": "If you earned over $150k in 2025, your 2026 catch-up contributions must be Roth. Ensure your plan offers a Roth option.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Kiddie Tax",
+    "definition": "A rule taxing a child's unearned income above $2,700 (2026) at the parents' marginal tax rate.",
+    "tip": "Be cautious shifting investments to children's accounts. UGMA/UTMA accounts can trigger kiddie tax until age 19 (or 24 if a student).",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Required Minimum Distributions",
+    "definition": "Mandatory annual withdrawals from traditional retirement accounts starting at age 73, calculated using IRS life expectancy tables.",
+    "tip": "RMDs can push you into higher brackets. Consider Roth conversions in your 60s to reduce future RMD tax impact.",
+    "topic": "retirement-accounts"
+  },
+  {
+    "term": "Tax Lot Identification",
+    "definition": "Selecting which specific shares to sell when you've purchased the same security at different times and prices.",
+    "tip": "Use specific identification to sell highest-cost lots first, minimizing capital gains. Set this as your default with your broker.",
+    "topic": "tax-optimization"
+  },
+  {
+    "term": "Inherited IRA Rules",
+    "definition": "Non-spouse beneficiaries must empty inherited IRAs within 10 years, with annual RMDs required if the original owner had started RMDs.",
+    "tip": "Plan inherited IRA withdrawals strategically across the 10 years to avoid a large tax hit in year 10.",
+    "topic": "retirement-accounts"
+  }
 ]
