@@ -1,0 +1,27 @@
+name: Update TRMNL Tip
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # runs daily at 9am UTC
+  workflow_dispatch:
+
+jobs:
+  update-tip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Select random tip
+        run: |
+          TIP=$(jq -c '.[]' tips.json | shuf -n 1)
+          echo "$TIP" > api.json
+
+      - name: Commit updated tip
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add api.json
+          git commit -m "Daily tip update" || exit 0
+          git push
