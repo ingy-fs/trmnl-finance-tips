@@ -2,7 +2,7 @@ name: Update TRMNL Tip
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # runs daily at 9am UTC
+    - cron: "0 5 * * *"   # 5am UTC = midnight EST (4am UTC during EDT)
   workflow_dispatch:
 
 jobs:
@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add api.json
+          git add api.json index.txt
           git commit -m "Daily tip update" || exit 0
           git push
