@@ -2,7 +2,7 @@ name: Update TRMNL Tip
 
 on:
   schedule:
-    - cron: "0 5 * * *"   # 5am UTC = midnight EST (4am UTC during EDT)
+    - cron: "0 5 * * *"   # 5am UTC = midnight EST / 1am EDT
   workflow_dispatch:
 
 jobs:
